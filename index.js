@@ -4,14 +4,14 @@ const path = require('path');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname + '/public/html/index.html'));
+    res.sendFile(path.join(__dirname + '/index.html'));
 });
 router.get('', (req, res) => {
-    res.sendFile(path.join(__dirname + '/public/html/index.html'));
+    res.sendFile(path.join(__dirname + '/index.html'));
 });
 
 router.get('/fuigumi', (req, res) => {
-    res.sendFile(path.join(__dirname + 'public/html/fuigumi.html'));
+    res.sendFile(path.join(__dirname + '/public/html/fuigumi.html'));
 });
 
 app.use('/', router);
